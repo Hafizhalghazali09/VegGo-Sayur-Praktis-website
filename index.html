@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TWENTY ONE COFFEE - Premium Indonesian
+Coffee Beans</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="container">
+
+      <div class="logo">
+        <img src="logoheaderuntara.png" alt="Logo UMKM" class="logo-img" />
+      </div>
+
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav>
+        <a href="#tentang">Tentang</a>
+        <a href="#produk">Produk</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#cara-order">Cara Order</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+
+      <a href="https://wa.me/6285695627262" class="btn btn-wa navbar-wa" target="_blank">
+        Pesan Sekarang
+      </a>
+    </div>
+  </header>
+
+  <section class="hero" id="beranda">
+    <div class="container">
+      <div class="hero-content">
+
+        <div class="hero-text">
+          <p class="hero-tag">VegGo - Sayur Siap Saji</p>
+          <h1><span style="color: #045222; text-shadow: 2px 2px 6px #1ebe5d;">Satu Paket</span><br><span style="color:  #045222; text-shadow: 2px 2px 6px #1ebe5d;">Langsung Masak</span></h1>
+          <p class="subtitle">Nikmati kemudahan memasak dengan VegGo, paket sayuran lengkap sesuai menu favoritmu. Semua bahan sayuran telah dipilih, ditimbang, dan dikemas dalam satu paket, sehingga kamu tidak perlu lagi mencari bahan satu per satu di pasar. Praktis, segar, dan siap menjadi hidangan lezat untuk keluarga.</p>
+          <div class="hero-buttons">
+
+            <a href="https://wa.me/6281299425082" class="btn btn-wa" target="_blank">
+              Order via WhatsApp
+            </a>
+            <a href="#produk" class="btn btn-outline">Lihat Produk</a>
+          </div>
+        </div>
+
+        <img src="logountara.jpeg" alt="Banner UMKM" class="hero-banner" />
+
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="tentang">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-images">
+          <img src="logountara.jpeg" alt="Foto Utama" class="img-main" />
+          <img src="logountara.jpeg" alt="Foto Tambahan" class="img-small" />
+
+          <div class="experience-badge">
+            <strong>6+</strong>
+            <span>Tahun<br>Pengalaman</span>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <p class="section-tag">Tentang Kami</p>
+          <h2 class="about-title" style="color: #045222; text-shadow: 2px 2px 8px #1ebe5d;">Kami Hadir untuk<br><span class="highlight" style="color: #045222;">Kualitas Terbaik</span></h2>
+          <p class="about-description">VegGo merupakan brand yang menghadirkan solusi praktis bagi masyarakat yang ingin memasak tanpa repot berbelanja banyak jenis sayuran. Kami menyediakan paket sayuran lengkap berdasarkan menu masakan, menggunakan sayuran segar pilihan yang dikemas secara higienis agar kualitas dan kesegarannya tetap terjaga.</p>
+
+          <ul class="about-checks">
+            <li>
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--warna-utama)" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Paket sayuran lengkap sesuai menu</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--warna-utama)" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Sayuran segar pilihan setiap hari</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--warna-utama)" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Praktis dan hemat waktu</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--warna-utama)" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Dikemas higienis dan mudah dibawa</span>
+            </li>
+          </ul>
+
+          <a href="#produk" class="btn btn-outline-dark" style="margin-top: 12px;">Lihat Produk</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="products" id="produk">
+    <div class="container">
+
+      <p class="section-tag">Pilihan Produk</p>
+      <h2 class="section-title">Produk</h2>
+      <p class="section-subtitle">Dibuat dari bahan pilihan, tanpa pengawet buatan.</p>
+
+      <div class="product-grid">
+
+        <div class="product-card">
+          <div class="product-img-wrapper">
+
+            <img src="produk-1.jpg" alt="Produk 1" class="product-img" onclick="bukaModal(this.src)" />
+
+            <div class="product-badge">Terlaris</div>
+          </div>
+          <div class="product-info">
+            <h3>VegGo Sayur Sop</h3>
+            <p>Paket lengkap berisi wortel, kentang, kol, buncis, daun bawang, dan seledri. Cocok untuk membuat sayur sop hangat dengan porsi 2–3 orang.</p>
+            <div class="product-footer">
+
+              <span class="price">Rp 18.000 / Paket</span>
+
+              <a href="https://wa.me/6285695627262?text=Halo,%20saya%20mau%20pesan%20Produk%201" class="btn-order"
+                target="_blank">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrapper">
+            <img src="produk-2.jpg" alt="Produk 2" class="product-img" onclick="bukaModal(this.src)" />
+          </div>
+          <div class="product-info">
+            <h3>VegGo Capcay</h3>
+            <p>Paket praktis berisi brokoli, kembang kol, wortel, sawi putih, dan jagung muda. Pilihan tepat untuk membuat capcay yang lezat dan bergizi.</p>
+            <div class="product-footer">
+              <span class="price">Rp 18.000 / Paket</span>
+              <a href="https://wa.me/6285695627262?text=Halo,%20saya%20mau%20pesan%20Produk%202" class="btn-order"
+                target="_blank">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrapper">
+            <img src="produk-3.jpg" alt="Produk 3" class="product-img" onclick="bukaModal(this.src)" />
+            <div class="product-badge new">Baru</div>
+          </div>
+          <div class="product-info">
+            <h3>VegGo Tumis Tempe Buncis</h3>
+            <p>Paket berisi tempe, buncis, bawang merah, bawang putih, dan cabai yang sudah disesuaikan untuk membuat tumis tempe buncis.</p>
+            <div class="product-footer">
+              <span class="price">Rp 18.000 / Paket</span>
+              <a href="https://wa.me/6285695627262?text=Halo,%20saya%20mau%20pesan%20Produk%203" class="btn-order"
+                target="_blank">Order</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="gallery" id="galeri">
+    <div class="container">
+
+      <p class="section-tag">Galeri</p>
+      <h2 class="section-title">Foto Produk & kegiatan</h2>
+      <p class="section-subtitle">Lihat lebih dekat produk dan proses pembuatan kami.</p>
+
+      <div class="gallery-grid">
+        <img src="Gallery-01-.jpeg" alt="Galeri 1" class="gallery-img" onclick="bukaModal(this.src)" />
+        <img src="Gallery-02.jpeg" alt="Galeri 2" class="gallery-img" onclick="bukaModal(this.src)" />
+        <img src="Gallery-03.jpeg" alt="Galeri 3" class="gallery-img" onclick="bukaModal(this.src)" />
+        <img src="Gallery-04.jpeg" alt="Galeri 4" class="gallery-img" onclick="bukaModal(this.src)" />
+        <img src="Gallery-05.jpeg" alt="Galeri 5" class="gallery-img" onclick="bukaModal(this.src)" />
+        <img src="Gallery-06.jpeg" alt="Galeri 6" class="gallery-img" onclick="bukaModal(this.src)" />
+      </div>
+
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimoni">
+    <div class="container">
+
+      <p class="section-tag">Ulasan Pelanggan</p>
+      <h2 class="section-title">Apa Kata Mereka?</h2>
+      <p class="section-subtitle">Kepuasan Anda adalah prioritas utama kami.</p>
+
+      <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Belanja jadi lebih praktis. Tinggal ambil satu paket, semua bahan sudah lengkap."</blockquote>
+          <div class="reviewer-info">
+            <div class="avatar">RN</div>
+            <div>
+              <div class="reviewer-name">Rani, Mahasiswa</div>
+              <div class="reviewer-title">Pelanggan sejak 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>
+            "Sekarang nggak perlu lagi muter-muter cari sayuran satu per satu di pasar. Sangat menghemat waktu."
+          </blockquote>
+          <div class="reviewer-info">
+            <div class="avatar">AD</div>
+            <div>
+              <div class="reviewer-name">Andi, Karyawan Swasta</div>
+              <div class="reviewer-title">Pelanggan sejak 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>
+            "Sayurannya masih segar, porsinya pas, dan hasil masakannya enak. Cocok buat keluarga kecil."
+          </blockquote>
+          <div class="reviewer-info">
+            <div class="avatar">ST</div>
+            <div>
+              <div class="reviewer-name">Siti, Ibu Rumah Tangga</div>
+              <div class="reviewer-title">Pelanggan sejak 2026</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="how-to-order" id="cara-order">
+    <div class="container">
+
+      <p class="section-tag">Cara Pesan</p>
+      <h2 class="section-title">Order Mudah 3 Langkah</h2>
+      <p class="section-subtitle">Pesan produk kami hanya dalam 3 langkah mudah!</p>
+
+      <div class="steps-grid">
+
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg></div>
+          <h3>Hubungi via WA</h3>
+          <p>Chat kami di WhatsApp dan sebutkan produk beserta jumlah yang ingin dipesan.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+              <line x1="1" y1="10" x2="23" y2="10"></line>
+            </svg></div>
+          <h3>Konfirmasi & Bayar</h3>
+          <p>Kami kirim total harga + ongkir. Bayar via transfer bank atau e-wallet.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
+              <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+              </path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg></div>
+          <h3>Terima Pesanan</h3>
+          <p>Pesanan dikemas rapi dan dikirim ke alamat kamu. Estimasi 1–3 hari kerja.</p>
+        </div>
+
+      </div>
+
+      <div class="order-cta">
+        <a href="https://wa.me/6285695627262?text=Halo,%20saya%20mau%20pesan!" class="btn btn-wa btn-large"
+          target="_blank">
+          Mulai Order Sekarang
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contact" id="kontak">
+    <div class="container">
+
+      <p class="section-tag">Hubungi Kami</p>
+      <h2 class="section-title">Ada Pertanyaan?</h2>
+      <p class="section-subtitle">Kami siap membantu kamu setiap hari!</p>
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+
+          <div class="contact-item">
+            <div class="contact-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg></div>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/6285695627262" target="_blank">+62 856-9562-7262</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg></div>
+            <div>
+              <strong>Instagram</strong>
+              <a href="https://instagram.com/namaakun" target="_blank">@namaakun</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg></div>
+            <div>
+              <strong>Alamat</strong>
+              <span>Jl. Contoh No. 1, Kota, Provinsi</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg></div>
+            <div>
+              <strong>Jam Buka</strong>
+              <span>Senin – Sabtu: 08.00 – 20.00<br>Minggu: 09.00 – 17.00</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="contact-map">
+          <p class="map-title">Temukan Kami di Maps</p>
+          <p class="map-hint">
+            Ganti bagian ini dengan embed Google Maps!<br>
+            Caranya: buka Google Maps → Share → Embed a map → salin kode &lt;iframe&gt;
+          </p>
+
+          <a href="https://maps.google.com" class="btn-outline-dark" target="_blank">
+            Buka di Google Maps
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand-col">
+          <p class="footer-brand">VegGo Sayur Praktis Dan Cepat</p>
+          <p class="footer-tagline">Satu Paket
+Langsung Masak</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#tentang">Tentang</a>
+          <a href="#produk">Produk</a>
+          <a href="#galeri">Galeri</a>
+          <a href="#kontak">Kontak</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://wa.me/6285695627262" target="_blank">WhatsApp</a>
+          <a href="https://instagram.com/namaakun" target="_blank">Instagram</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p>&copy; 2026 VegGo Sayur Praktis Dan Cepat. Dibuat dengan sepenuh hati oleh Kelompok 10 4A Bisnis Digital</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- Modal untuk Gambar ga usah diotak atik -->
+  <div id="modalGambar" class="modal" onclick="tutupModal()">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="imgModal">
+  </div>
+
+  <script>
+    function bukaModal(src) {
+      document.getElementById("modalGambar").style.display = "flex";
+      document.getElementById("imgModal").src = src;
+    }
+    function tutupModal() {
+      document.getElementById("modalGambar").style.display = "none";
+    }
+
+    // Auto-close menu mobile saat link diklik pake js dikit, juga ga usah diotak atik.
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById("menu-toggle").checked = false;
+      });
+    });
+  </script>
+</body>
+
+</html>
